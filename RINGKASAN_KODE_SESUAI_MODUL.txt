@@ -1,0 +1,275 @@
+RINGKASAN KODE WEBSITE ILMS
+Sesuai Modul Pemrograman Web 1, Pertemuan 1-9
+====================================================================
+
+1. INFORMASI UMUM
+--------------------------------------------------------------------
+Nama proyek      : ILMS - IoT Laboratory Management System
+Jenis website    : Website statis multi-halaman
+Folder website   : D:\Study\Prototype\ILMS (HTML,CSS,JS)\website
+Modul acuan      : Modul - Pemrograman Web 1.pdf
+Batas materi     : Pertemuan 1 sampai Pertemuan 9
+Teknologi        : HTML, CSS, dan JavaScript dasar
+Tanpa            : Framework, library, DOM manipulation, event listener,
+                   fetch/API, ES6 module, database, dan backend.
+
+Proyek contoh pada modul adalah "Website Profil UMKM Sederhana".
+Struktur tersebut diadaptasi menjadi website profil laboratorium:
+- Beranda        -> halaman utama dan pengenalan laboratorium
+- Tentang        -> profil, visi, misi, fasilitas, dan struktur
+- Inventori      -> daftar perangkat, menggantikan daftar produk UMKM
+- Galeri         -> dokumentasi kegiatan
+- Kontak         -> informasi kontak dan formulir
+
+2. STRUKTUR FOLDER
+--------------------------------------------------------------------
+website/
+  index.html
+  tentang.html
+  inventori.html
+  galeri.html
+  kontak.html
+  css/
+    style.css
+  js/
+    script.js
+  images/
+    logo.svg
+    hero-lab.svg
+    lab-activity.svg
+    arduino.svg
+    video-poster.svg
+    gallery-1.svg
+    gallery-2.svg
+    gallery-3.svg
+    gallery-4.svg
+    gallery-5.svg
+    gallery-6.svg
+  audio/
+    sambutan.wav
+  video/
+    profil-lab.mp4
+
+3. RINGKASAN SETIAP FILE
+--------------------------------------------------------------------
+index.html
+- Halaman beranda.
+- Berisi header, navigasi, hero, statistik, pengenalan laboratorium,
+  fokus kegiatan, empat divisi, video profil, audio sambutan, sorotan
+  galeri, CTA, dan footer.
+- Menggunakan tautan relatif antarhalaman.
+- Media video dan audio memakai elemen HTML5 <video> dan <audio>.
+
+tentang.html
+- Halaman profil laboratorium.
+- Berisi pengantar, visi, misi, nilai, fasilitas, struktur pengelola,
+  dan timeline perjalanan laboratorium.
+- Menggunakan daftar <ul>, <ol>, kartu, dan gambar ilustrasi.
+
+inventori.html
+- Halaman daftar perangkat laboratorium.
+- Berisi ringkasan angka, tabel inventori 10 perangkat, alur
+  peminjaman, dan kategori perangkat.
+- Tabel memakai <caption>, <thead>, <tbody>, <th scope>, dan <td>.
+- Kondisi perangkat ditandai dengan badge: Baik, Perlu kalibrasi,
+  dan Perlu perawatan.
+
+galeri.html
+- Halaman dokumentasi kegiatan.
+- Berisi enam kartu galeri, video profil, kategori dokumentasi,
+  dan CTA.
+- Setiap gambar memiliki teks alternatif (alt).
+
+kontak.html
+- Halaman kontak.
+- Berisi kartu alamat, email, telepon, jam layanan, formulir pesan,
+  dan pertanyaan umum.
+- Formulir memakai input text, email, select, textarea, checkbox,
+  label, dan tombol submit.
+- Formulir masih statis; pengiriman ke sistem belum diaktifkan.
+
+css/style.css
+- Satu file CSS eksternal untuk seluruh halaman.
+- Mengatur warna, tipografi, jarak, border, kartu, tabel, formulir,
+  navigasi, footer, dan tampilan responsif.
+- Menggunakan flexbox dan media query.
+- Breakpoint responsif: 980px, 760px, dan 520px.
+
+js/script.js
+- Berisi JavaScript dasar Pertemuan 9.
+- Mendeklarasikan variabel dengan var, let, dan const.
+- Memakai tipe data string, number, boolean, dan undefined.
+- Memakai operator aritmetika, perbandingan, dan logika.
+- Menampilkan hasil latihan melalui console.log().
+- Tidak memakai DOM, event, function, array, object, fetch, atau
+  alert yang menghalangi halaman.
+
+4. PEMETAAN KE MATERI MODUL
+--------------------------------------------------------------------
+Pertemuan 1 - Konsep dasar web
+- Website dibuat sebagai kumpulan halaman statis.
+- Halaman diakses melalui web server lokal, bukan dibuka langsung
+  sebagai file.
+- Tautan antarhalaman memakai path relatif.
+- Penerapan: seluruh file HTML dan cara menjalankan server lokal.
+
+Pertemuan 2 - Struktur dasar HTML
+- Memakai <!DOCTYPE html>, <html>, <head>, <meta>, <title>, dan
+  <body>.
+- Memakai heading, paragraf, list, link, dan gambar.
+- Memakai header, nav, main, section, article, dan footer.
+- Penerapan: index.html, tentang.html, inventori.html, galeri.html,
+  dan kontak.html.
+
+Pertemuan 3 - HTML lanjutan
+- Memakai daftar tidak berurut dan daftar berurut.
+- Memakai gambar dengan atribut alt.
+- Memakai tautan internal dan tautan email.
+- Memakai audio dan video HTML5 beserta poster video.
+- Penerapan: hero, galeri, media beranda, dan timeline.
+
+Pertemuan 4 - Tabel dan formulir
+- Tabel inventori memakai caption, thead, tbody, th, td, dan scope.
+- Formulir kontak memakai label, input text, input email, select,
+  textarea, checkbox, dan tombol submit.
+- Penerapan: inventori.html dan kontak.html.
+
+Pertemuan 5 - Pengenalan CSS
+- CSS dipisahkan dari HTML memakai file eksternal style.css.
+- Seluruh halaman memakai satu stylesheet yang sama.
+- Penerapan: <link rel="stylesheet" href="css/style.css">.
+
+Pertemuan 6 - Selector dan properti CSS
+- Memakai selector elemen, class, id, dan pseudo-class :hover/:focus.
+- Mengatur warna, font, ukuran teks, spasi huruf, perataan, dan
+  dekorasi tautan.
+- Penerapan: tipografi, navigasi aktif, tombol, kartu, dan tabel.
+
+Pertemuan 7 - Box model dan tata letak dasar
+- Memakai margin, padding, border, width, max-width, dan height.
+- Memakai display, overflow, dan position.
+- Memakai border-radius untuk sudut kartu dan tombol.
+- Penerapan: container, kartu, tabel, formulir, skip-link, dan badge.
+
+Pertemuan 8 - Flexbox dan responsif
+- Memakai display: flex, flex-wrap, flex-basis, justify-content,
+  align-items, dan gap.
+- Memakai media query untuk tablet dan ponsel.
+- Penerapan: header, hero, statistik, kartu, galeri, kontak, footer.
+
+Pertemuan 9 - JavaScript dasar
+- Memakai var, let, dan const.
+- Memakai tipe data string, number, boolean, dan undefined.
+- Memakai operator +, -, *, /, >, >=, &&, dan typeof.
+- Menampilkan hasil melalui console.log().
+- Penerapan: js/script.js.
+- Alert tidak dipakai saat halaman dimuat agar pengguna tidak
+  terganggu; console.log tetap dipakai untuk latihan.
+
+5. RINGKASAN CSS
+--------------------------------------------------------------------
+- Warna utama:
+  - Biru      : #2563eb
+  - Biru tua  : #1d4ed8
+  - Gelap     : #0f172a
+  - Latar     : #f1f5f9
+  - Teks      : #1e293b
+  - Abu       : #64748b
+- Font: Segoe UI, Arial, sans-serif.
+- Container: lebar maksimum 1180px dan margin otomatis.
+- Header: latar gelap, logo, dan navigasi flex.
+- Hero: teks besar, tombol, ilustrasi, dan daftar keunggulan.
+- Kartu: border tipis, sudut membulat, dan padding.
+- Tabel: dapat digulir horizontal pada layar kecil.
+- Formulir: input, select, textarea, dan checkbox yang diberi label.
+- Responsif:
+  - 980px: ukuran judul dan jarak diperkecil.
+  - 760px: navigasi dan kolom konten ditumpuk.
+  - 520px: tombol menjadi lebar penuh dan tabel digulir.
+
+6. RINGKASAN JAVASCRIPT
+--------------------------------------------------------------------
+Isi js/script.js:
+- var namaLaboratorium = "ILMS";
+- let jumlahPerangkat = 120;
+- const tahunAktif = 2026;
+- const laboratoriumAktif = true;
+- let perangkatSiap = 92;
+- let perangkatPerawatan = 3;
+- let totalPerangkat = perangkatSiap + perangkatPerawatan;
+- let persentaseSiap = (perangkatSiap / totalPerangkat) * 100;
+- let kategoriUtama = 6;
+- let namaSitus = "IoT Laboratory Management System";
+- let versiSitus = 1.0;
+- let sudahDiverifikasi = false;
+
+Latihan operator:
+- Aritmetika: +, -, *, /
+- Perbandingan: >, >=
+- Logika: &&
+- Pemeriksaan tipe: typeof
+
+Output:
+- Semua hasil ditampilkan melalui console.log().
+- Buka Developer Tools (F12) lalu tab Console untuk melihat hasil.
+
+7. RINGKASAN ASET
+--------------------------------------------------------------------
+- Seluruh ilustrasi dibuat sebagai file SVG lokal.
+- Logo ILMS: images/logo.svg.
+- Ilustrasi hero: images/hero-lab.svg.
+- Ilustrasi kegiatan: images/lab-activity.svg.
+- Ilustrasi mikrokontroler: images/arduino.svg.
+- Poster video: images/video-poster.svg.
+- Enam dokumentasi galeri: images/gallery-1.svg sampai gallery-6.svg.
+- Audio sambutan: audio/sambutan.wav, 5 detik, 44.1 kHz, mono.
+- Video profil: video/profil-lab.mp4, 12 detik, 24 fps, 960x540.
+- Tidak ada gambar atau media yang diambil dari internet.
+
+8. CARA MENJALANKAN
+--------------------------------------------------------------------
+1. Buka terminal.
+2. Masuk ke folder website:
+   cd "D:\Study\Prototype\ILMS (HTML,CSS,JS)\website"
+3. Jalankan server lokal:
+   py -3 -m http.server 5173
+4. Buka browser:
+   http://localhost:5173
+5. Untuk melihat output JavaScript, tekan F12 lalu buka tab Console.
+
+9. BATASAN SESUAI PERTEMUAN 9
+--------------------------------------------------------------------
+- Belum ada DOM manipulation.
+- Belum ada event listener atau interaksi JavaScript.
+- Belum ada fetch/API.
+- Belum ada login, dashboard, CRUD, atau database.
+- Formulir kontak masih statis dan belum mengirim data.
+- Data inventori masih ditulis langsung di HTML.
+- Navigasi mobile tidak memakai tombol hamburger karena belum
+  memakai JavaScript DOM.
+- Belum memakai framework CSS atau JavaScript.
+- Belum memakai CSS Grid, animasi kompleks, atau CSS variable.
+
+10. HASIL VERIFIKASI
+--------------------------------------------------------------------
+- Lima halaman HTML dapat diakses melalui server lokal.
+- Semua tautan internal dan aset lokal ditemukan.
+- Tidak ada id ganda pada halaman.
+- Seluruh file SVG valid.
+- Audio WAV: 5 detik, 44.1 kHz, mono.
+- Video MP4: 12 detik, 24 fps, 960x540, 288 frame.
+- Sintaks js/script.js lolos pemeriksaan Node.js.
+- Tidak ada library atau aset eksternal yang diperlukan.
+
+11. RENCANA PERTEMUAN BERIKUTNYA
+--------------------------------------------------------------------
+Materi setelah Pertemuan 9 dapat ditambahkan tanpa mengubah struktur
+dasar website:
+- JavaScript lanjutan: percabangan, perulangan, dan function.
+- DOM dan event pada Pertemuan 11.
+- Validasi form dan interaksi halaman.
+- Framework atau library pada Pertemuan 13.
+- Integrasi API dan pengelolaan data pada Pertemuan 14.
+
+Dengan demikian, website ini sengaja berhenti pada tingkat HTML, CSS,
+dan JavaScript dasar sesuai batas Pertemuan 9.

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daftar inventori perangkat Laboratorium IoT ILMS, lengkap dengan kategori, jumlah, kondisi, dan lokasi penyimpanan.">
+    <title>Inventori | ILMS - Laboratorium IoT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="ILMS - Laboratorium IoT">
+            </a>
+            <nav class="main-nav" aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a class="active" href="inventori.html" aria-current="page">Inventori</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Inventori</p>
+                <h1>Perangkat terdata, kegiatan lebih siap.</h1>
+                <p>Pantau ketersediaan dan kondisi perangkat utama laboratorium sebelum merencanakan praktikum atau pengambilan alat.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="ringkasan-inventori-judul">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">Ringkasan</p>
+                        <h2 id="ringkasan-inventori-judul">Kondisi inventori</h2>
+                    </div>
+                    <p>Angka ringkas dari pencatatan inventori laboratorium pada periode berjalan.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-card">
+                        <span class="stat-number">120+</span>
+                        <span class="stat-label">Total perangkat</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Kategori perangkat</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">92</span>
+                        <span class="stat-label">Unit siap digunakan</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Perlu perawatan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-soft" aria-labelledby="tabel-judul">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">Daftar</p>
+                        <h2 id="tabel-judul">Inventori utama</h2>
+                    </div>
+                    <p>Gunakan tabel berikut untuk memeriksa jumlah, kondisi, dan lokasi penyimpanan perangkat.</p>
+                </div>
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <caption>Daftar inventori utama Laboratorium IoT ILMS</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Nama Perangkat</th>
+                                <th scope="col">Kategori</th>
+                                <th scope="col">Jumlah</th>
+                                <th scope="col">Kondisi</th>
+                                <th scope="col">Lokasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <th scope="row">Arduino Uno R3</th>
+                                <td>Mikrokontroler</td>
+                                <td>24 unit</td>
+                                <td><span class="badge badge-good">Baik</span></td>
+                                <td>Lemari A1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <th scope="row">ESP32 DevKit V1</th>
+                                <td>Mikrokontroler</td>
+                                <td>18 unit</td>
+                                <td><span class="badge badge-good">Baik</span></td>
+                                <td>Lemari A1</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <th scope="row">Raspberry Pi 4 Model B</th>
+                                <td>Komputer papan tunggal</td>
+                                <td>6 unit</td>
+                                <td><span class="badge badge-good">Baik</span></td>
+                                <td>Lemari A2</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <th scope="row">Sensor DHT22</th>
+                                <td>Sensor</td>
+                                <td>30 unit</td>
+                                <td><span class="badge badge-good">Baik</span></td>
+                                <td>Kotak B1</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <th scope="row">Sensor HC-SR04</th>
+                                <td>Sensor</td>
+                                <td>22 unit</td>
+                                <td><span class="badge badge-good">Baik</span></td>
+                                <td>Kotak B1</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <th scope="row">Sensor MQ-135</th>
+                                <td>Sensor</td>
+                                <td>12 unit</td>
+                                <td><span class="badge badge-warn">Perlu kalibrasi</span></td>
+                                <td>Kotak B2</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <th scope="row">Servo SG90</th>
+                                <td>Aktuator</td>
+                                <td>26 unit</td>
+                                <td><span class="badge badge-good">Baik</span></td>
+                                <td>Kotak C1</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <th scope="row">Modul Relay 4 Channel</th>
+                                <td>Aktuator</td>
+                                <td>16 unit</td>
+                                <td><span class="badge badge-good">Baik</span></td>
+                                <td>Kotak C1</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <th scope="row">Multimeter Digital</th>
+                                <td>Alat ukur</td>
+                                <td>10 unit</td>
+                                <td><span class="badge badge-good">Baik</span></td>
+                                <td>Lemari D1</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <th scope="row">Soldering Station</th>
+                                <td>Alat perakitan</td>
+                                <td>8 unit</td>
+                                <td><span class="badge badge-warn">Perlu perawatan</span></td>
+                                <td>Meja Kerja 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Data pada halaman ini merupakan contoh statis untuk keperluan pembelajaran. Pembaruan inventori akan dihubungkan ke sistem pada tahap berikutnya.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="alur-judul">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">Peminjaman</p>
+                        <h2 id="alur-judul">Alur penggunaan perangkat</h2>
+                    </div>
+                    <p>Ikuti empat langkah berikut agar perangkat tetap aman dan mudah ditemukan oleh pengguna berikutnya.</p>
+                </div>
+                <div class="steps">
+                    <article class="step-card">
+                        <span class="step-number">1</span>
+                        <h3>Cek ketersediaan</h3>
+                        <p>Periksa daftar inventori dan pastikan perangkat sedang tidak digunakan.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">2</span>
+                        <h3>Ajukan permohonan</h3>
+                        <p>Sampaikan kebutuhan, waktu penggunaan, dan tujuan kegiatan kepada pengelola.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">3</span>
+                        <h3>Verifikasi asisten</h3>
+                        <p>Asisten memeriksa kondisi awal perangkat bersama peminjam.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">4</span>
+                        <h3>Gunakan dan kembalikan</h3>
+                        <p>Gunakan sesuai prosedur, lalu kembalikan pada waktu yang disepakati.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-soft" aria-labelledby="kategori-judul">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">Kategori</p>
+                        <h2 id="kategori-judul">Kelompok perangkat</h2>
+                    </div>
+                    <p>Pengelompokan sederhana untuk memudahkan pencarian dan perawatan.</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <span class="icon-badge">MK</span>
+                        <h3>Mikrokontroler</h3>
+                        <p>Arduino, ESP32, Raspberry Pi, dan board pengendali lain untuk membangun prototipe.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="icon-badge icon-badge-teal">SA</span>
+                        <h3>Sensor dan aktuator</h3>
+                        <p>Perangkat untuk membaca lingkungan dan menjalankan aksi berdasarkan data.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="icon-badge icon-badge-amber">AP</span>
+                        <h3>Alat ukur dan perakitan</h3>
+                        <p>Multimeter, soldering station, dan alat pendukung untuk pemeriksaan serta perakitan.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Butuh perangkat untuk kegiatan?</h2>
+                    <p>Hubungi pengelola untuk memeriksa ketersediaan dan prosedur peminjaman.</p>
+                </div>
+                <a class="button button-light" href="kontak.html">Ajukan Pertanyaan</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/logo.svg" alt="ILMS - Laboratorium IoT">
+                <p>IoT Laboratory Management System. Ruang belajar, riset, dan kolaborasi untuk solusi berbasis Internet of Things.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="inventori.html">Inventori</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Kontak</h3>
+                <address>
+                    Gedung Laboratorium Terpadu, Lantai 2<br>
+                    Kampus Teknologi, Indonesia<br>
+                    lab.iot@kampus.ac.id
+                </address>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 ILMS - Laboratorium IoT.</p>
+            <p>Dibangun dengan HTML, CSS, dan JavaScript dasar.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

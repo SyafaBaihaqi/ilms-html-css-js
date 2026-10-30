@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubungi Laboratorium IoT ILMS untuk informasi praktikum, peminjaman perangkat, kolaborasi, dan kunjungan.">
+    <title>Kontak | ILMS - Laboratorium IoT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="ILMS - Laboratorium IoT">
+            </a>
+            <nav class="main-nav" aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="inventori.html">Inventori</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a class="active" href="kontak.html" aria-current="page">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Kontak</p>
+                <h1>Mari berbicara tentang kebutuhan Anda.</h1>
+                <p>Gunakan informasi kontak atau formulir berikut untuk bertanya tentang praktikum, inventori, dan kolaborasi.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="kontak-judul">
+            <div class="container contact-layout">
+                <div class="contact-info">
+                    <p class="eyebrow eyebrow-dark">Informasi</p>
+                    <h2 id="kontak-judul">Hubungi laboratorium</h2>
+                    <p>Pengelola laboratorium akan merespons pada jam layanan. Untuk kebutuhan mendesak, datang langsung ke ruang laboratorium.</p>
+
+                    <div class="contact-card">
+                        <h3>Alamat</h3>
+                        <address>
+                            Gedung Laboratorium Terpadu, Lantai 2<br>
+                            Kampus Teknologi, Indonesia
+                        </address>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <p><a href="mailto:lab.iot@kampus.ac.id">lab.iot@kampus.ac.id</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Telepon</h3>
+                        <p>(021) 555-0123</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Jam layanan</h3>
+                        <p>Senin sampai Jumat, 08.00-16.00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <h2>Kirim pesan</h2>
+                    <p>Isi data berikut dengan lengkap agar pesan mudah ditindaklanjuti.</p>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nama">Nama lengkap</label>
+                                <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="identitas">NIM / Unit</label>
+                                <input type="text" id="identitas" name="identitas" placeholder="Contoh: 23101001">
+                            </div>
+                            <div class="form-group">
+                                <label for="kategori">Kategori</label>
+                                <select id="kategori" name="kategori" required>
+                                    <option value="">Pilih kategori</option>
+                                    <option value="umum">Pertanyaan umum</option>
+                                    <option value="peminjaman">Peminjaman alat</option>
+                                    <option value="praktikum">Jadwal praktikum</option>
+                                    <option value="kolaborasi">Kolaborasi</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subjek">Subjek</label>
+                            <input type="text" id="subjek" name="subjek" placeholder="Ringkasan pesan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" placeholder="Tuliskan pertanyaan atau kebutuhan Anda" required></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="setuju" name="setuju" required>
+                            <label for="setuju">Saya menyetujui data yang dikirim digunakan untuk keperluan komunikasi laboratorium.</label>
+                        </div>
+                        <button class="button button-dark" type="submit">Kirim Pesan</button>
+                        <p class="form-note">Formulir ini masih berupa tampilan statis. Pengiriman pesan ke sistem akan diaktifkan pada tahap pengembangan berikutnya.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-soft" aria-labelledby="faq-judul">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">Pertanyaan umum</p>
+                        <h2 id="faq-judul">Sebelum menghubungi</h2>
+                    </div>
+                    <p>Beberapa jawaban singkat untuk pertanyaan yang sering muncul.</p>
+                </div>
+                <div class="faq-list">
+                    <article class="faq-item">
+                        <h3>Bagaimana cara meminjam alat?</h3>
+                        <p>Periksa inventori, ajukan permohonan kepada pengelola, lalu lakukan verifikasi kondisi alat bersama asisten.</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>Apakah laboratorium terbuka untuk mahasiswa lain?</h3>
+                        <p>Kegiatan kolaborasi dapat dilakukan setelah mendapatkan izin dan jadwal dari pengelola laboratorium.</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>Apakah bisa meminta pendampingan?</h3>
+                        <p>Bisa. Sampaikan topik dan kebutuhan waktu agar asisten dapat menyiapkan pendampingan yang sesuai.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Ingin melihat fasilitas secara langsung?</h2>
+                    <p>Atur waktu kunjungan bersama pengelola laboratorium.</p>
+                </div>
+                <a class="button button-light" href="tentang.html">Lihat Tentang Lab</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/logo.svg" alt="ILMS - Laboratorium IoT">
+                <p>IoT Laboratory Management System. Ruang belajar, riset, dan kolaborasi untuk solusi berbasis Internet of Things.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="inventori.html">Inventori</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Kontak</h3>
+                <address>
+                    Gedung Laboratorium Terpadu, Lantai 2<br>
+                    Kampus Teknologi, Indonesia<br>
+                    lab.iot@kampus.ac.id
+                </address>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 ILMS - Laboratorium IoT.</p>
+            <p>Dibangun dengan HTML, CSS, dan JavaScript dasar.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

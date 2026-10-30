@@ -1,0 +1,33 @@
+var namaLaboratorium = "ILMS";
+let jumlahPerangkat = 120;
+const tahunAktif = 2026;
+const laboratoriumAktif = true;
+
+let perangkatSiap = 92;
+let perangkatPerawatan = 3;
+let totalPerangkat = perangkatSiap + perangkatPerawatan;
+let persentaseSiap = (perangkatSiap / totalPerangkat) * 100;
+let kategoriUtama = 6;
+let namaSitus = "IoT Laboratory Management System";
+let versiSitus = 1.0;
+let sudahDiverifikasi = false;
+
+console.log("=== ILMS - Laboratorium IoT ===");
+console.log("Nama laboratorium: " + namaLaboratorium);
+console.log("Jumlah perangkat: " + jumlahPerangkat);
+console.log("Tahun aktif: " + tahunAktif);
+console.log("Laboratorium aktif: " + laboratoriumAktif);
+console.log("Perangkat siap: " + perangkatSiap);
+console.log("Perangkat perawatan: " + perangkatPerawatan);
+console.log("Total perangkat tercatat: " + totalPerangkat);
+console.log("Persentase siap pakai: " + persentaseSiap + "%");
+console.log("Kategori utama: " + kategoriUtama);
+console.log("Nama situs: " + namaSitus);
+console.log("Versi situs: " + versiSitus);
+console.log("Sudah diverifikasi: " + sudahDiverifikasi);
+console.log("Tipe namaLaboratorium: " + typeof namaLaboratorium);
+console.log("Tipe jumlahPerangkat: " + typeof jumlahPerangkat);
+console.log("Tipe laboratoriumAktif: " + typeof laboratoriumAktif);
+console.log("Cek total > 100: " + (totalPerangkat > 100));
+console.log("Cek siap >= 90: " + (perangkatSiap >= 90));
+console.log("Cek aktif dan siap: " + (laboratoriumAktif && perangkatSiap > 0));
